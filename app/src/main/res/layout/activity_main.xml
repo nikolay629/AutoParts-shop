@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/mainTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:background="#63FFFFFF"
+        android:text="Welcome to us!"
+        android:textColor="#000000"
+        android:textSize="36sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/marketButton"
+        android:layout_width="122dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="164dp"
+        android:background="#8E8686"
+        android:text="Market"
+        android:textColorHighlight="#FFFFFF"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainTextView" />
+
+    <Button
+        android:id="@+id/addPartButton"
+        android:layout_width="122dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="164dp"
+        android:background="#8E8686"
+        android:text="Add Parts"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.854"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainTextView" />
+
+    <Button
+        android:id="@+id/allBillsButton"
+        android:layout_width="122dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="68dp"
+        android:background="#8E8686"
+        android:text="All Bills"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/marketButton" />
+
+    <Button
+        android:id="@+id/inventoryButton"
+        android:layout_width="122dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="68dp"
+        android:background="#8E8686"
+        android:text="Inventory"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.661"
+        app:layout_constraintStart_toEndOf="@+id/allBillsButton"
+        app:layout_constraintTop_toBottomOf="@+id/addPartButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
